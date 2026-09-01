@@ -182,6 +182,58 @@ body {
   padding-top: 2rem;
 }
 
+.hazard-map-wrap {
+  margin-bottom: 2rem;
+}
+
+.hazard-map {
+  height: 420px;
+  width: 100%;
+  border: 1px solid var(--border);
+}
+
+.map-placeholder {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--border);
+  color: var(--muted);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.map-legend > div {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.swatch {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.legend-note {
+  flex-basis: 100%;
+  margin: 0.25rem 0 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+}
+
 .results-summaries {
   display: grid;
   grid-template-columns: 1fr 1fr;
