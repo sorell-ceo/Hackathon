@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { API_BASE_URL } from "./config.js";
+import HazardMap from "./HazardMap.jsx";
 
 const FALLBACK_FUEL_TYPES = [
   "gasoline",
@@ -316,6 +317,8 @@ export default function App() {
 
       {result && (
         <section className="results">
+          <HazardMap facilityA={facilityA} facilityB={facilityB} result={result} />
+
           <div className="results-summaries">
             <div>
               <h2 style={{ color: "#ff6b35" }}>Facility A</h2>
