@@ -1,0 +1,42 @@
+{
+  "facility_a": {
+    "id": "FAC-A-GASOLINE-SMALL",
+    "diameter_m": 12.0,
+    "volume_m3": 1131.0,
+    "fuel_type": "gasoline",
+    "wind_speed_m_s": 3.0,
+    "radiated_heat_release_w": 95140306.1
+  },
+  "facility_b": {
+    "id": "FAC-B-LPG-LARGE",
+    "diameter_m": 28.0,
+    "volume_m3": 9852.0,
+    "fuel_type": "lpg_propane",
+    "wind_speed_m_s": 9.0,
+    "radiated_heat_release_w": 841240601.1
+  },
+  "thermal_distance_comparison_m": [
+    {
+      "level": 1,
+      "facility_a_m": 12.71,
+      "facility_b_m": 37.79,
+      "difference_m": 25.08,
+      "ratio_b_over_a": 2.973
+    },
+    {
+      "level": 2,
+      "facility_a_m": 22.01,
+      "facility_b_m": 65.46,
+      "difference_m": 43.45,
+      "ratio_b_over_a": 2.974
+    },
+    {
+      "level": 3,
+      "facility_a_m": 38.91,
+      "facility_b_m": 115.71,
+      "difference_m": 76.8,
+      "ratio_b_over_a": 2.974
+    }
+  ],
+  "explanation": "Hazard distance scales with sqrt(burning_area * heat_of_combustion * burning_rate * radiative_fraction). Burning area scales with diameter^2, so a larger-diameter tank (or a more energetic fuel) produces a larger radiated heat release and therefore a larger hazard radius at every severity threshold; wind speed further reshapes the footprint (elongating it downwind) without changing the underlying radiated power."
+}
